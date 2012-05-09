@@ -44,6 +44,7 @@ dwsync.xml
 intermediate
 publish
 .idea
+db.php
 
 # build script local files
 build/buildinfo.properties
