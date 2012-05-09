@@ -21,7 +21,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<title>Make it Count!</title>
-	<meta name="description" content="Make it count shows our hourly running improvement using a realtime datavisualisation. Runs are tracked via tweets. MAKE IT COUNT!">
+	<meta name="description" content="Make it count shows our hourly running improvement using a realtime data visualisation. Runs are tracked via tweets. MAKE IT COUNT!">
 
 	<!-- Mobile viewport optimized: h5bp.com/viewport -->
 	<meta name="viewport" content="width=device-width">
@@ -176,7 +176,7 @@
 		<!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
 		mathiasbynens.be/notes/async-analytics-snippet -->
 		<script>
-		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+		var _gaq=[['_setAccount','UA-19313599-8'],['_trackPageview']];
 		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
 			g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
 			s.parentNode.insertBefore(g,s)}(document,'script'));
