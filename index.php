@@ -49,7 +49,7 @@
 			Make it count! is all about trying to improve our running, and by our I mean <em>everyone</em>'s running.
 			Every hour we need to get better than the hour before!
 
-			<a href="https://twitter.com/share" class="twitter-share-button" data-text="Is this going to be our best hour? http://mikevanrossum.nl/make-it-count/" data-via="mikevanrossum" data-hashtags="makeitcount">Tweet</a>
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="Is this going to be our best hour?" data-via="mikevanrossum" data-hashtags="makeitcount">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 		</p>
