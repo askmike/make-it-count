@@ -13,6 +13,7 @@ $(function(){
 				interval,
 				recordTweets = [],
 				recordRunning,
+				fetched,
 				c = record.getContext('2d');
 
 			c.font = 'bolder 30px helvetica';
@@ -27,20 +28,24 @@ $(function(){
 
 					//run the record
 					if(!interval) {
+						
+						//make sure we don't get them twice (when clicked the second time before the result came in)
+						if(!fetched) {
+							fetched = true;
+							//if we don't got them yet, get them
+							$.getJSON('topHour.php', function(d) {
 
-						//if we don't got them yet, get them
-						$.getJSON('topHour.php', function(d) {
+								var i = d.length;
 
-							var i = d.length;
+								addTweets(recordTweets, d);
 
-							addTweets(recordTweets, d);
+								//setup here because async js
+								interval = setInterval(function() {
+									draw(c, recordTweets);
+								}, fps / 1000);
 
-							//setup here because async js
-							interval = setInterval(function() {
-								draw(c, recordTweets);
-							}, fps / 1000);
-
-						});
+							});	
+						}
 
 					} else {
 						//else we got them, just draw
@@ -71,6 +76,7 @@ $(function(){
 			twoPi = Math.PI * 2;
 
 		c.fillStyle = 'white';
+		c.font = 'bolder 30px helvetica';
 		c.fillText("Loading realtime tweets...", 100, yC);
 
 		//create particle skeleton

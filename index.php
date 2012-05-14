@@ -45,14 +45,36 @@
 		<h1>
 			Make it count!
 		</h1>
-		<p id='header' class='info'>
-			Make it count! is all about trying to improve our running, and by our I mean <em>everyone</em>'s running.
-			Every hour we need to get better than the hour before!
-
-			<a href="https://twitter.com/share" class="twitter-share-button" data-text="Is this going to be our best hour?" data-via="mikevanrossum" data-hashtags="makeitcount">Tweet</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-		</p>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-text="Is this going to be our best hour?" data-via="mikevanrossum" data-hashtags="makeitcount">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+		<div class='more clearfix'>
+			<div class='column'>
+				<p>
+					Make it count is a data visualization experiment by <a href='http://twitter.com/mikevanrossum/'>@mikevanrossum</a>:
+				</p>
+				<ul>
+					<li>
+						You only see data from this clock hour, updated <strong>realtime</strong> as new <strong>Twitter</strong> data comes in.
+					</li>
+					<li>
+						Each white circle represents a tweet (like the on on the right), from runners from all over the world.
+					</li>
+					<li>
+						The bigger the circles, the bigger the run. The more centered the circle, the more famous the runner.
+					</li>
+					<li>
+						Stats about this hour are displayed besides the visualization.
+					</li>
+					<li>
+						The second visualization shows today's the best hour.
+					</li>
+				</ul>
+			</div>
+			<div id='tweet' class='column clearfix'>
+					<blockquote class="twitter-tweet tw-align-center"><p>I just finished a 5,3 km run <a href="https://twitter.com/search/%2523nikeplus">#nikeplus</a> <a href="https://twitter.com/search/%2523makeitcount">#makeitcount</a></p>&mdash; Mike van Rossum (@mikevanrossum) <a href="https://twitter.com/mikevanrossum/status/200285124020023296" data-datetime="2012-05-09T18:04:29+00:00">May 9, 2012</a></blockquote>
+					<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+			</div>
+		</div>
 		<div id='main' class='clearfix'>
 			<canvas class='sketch' id='live' width='500' height='300'></canvas>
 			<div class='info' id='hourScoreContainer'>
@@ -93,30 +115,7 @@
 				</table>
 			</div>
 		</div>
-		<div class='more clearfix'>
-			<div class='column'>
-				<p>
-					This visualization is updated realtime as new data comes in. 
-					The bigger the circle, the bigger the run. Circles towards the center have a high tweet reach.
-				</p>
-				<h2>
-					Count me in!
-				</h2>
-				<p>
-					If you use the <a href='http://itunes.apple.com/us/app/nike+-gps/id387771637?mt=8'>Nike+ GPS app</a> to track your running, you can tweet
-					those runs. Or:
-				</p>
-				<ol>
-					<li>Run!</li>
-					<li>Tweet the results in the same format as on the right!</li>
-					<li>Repeat and MAKE IT COUNT!</li>
-				</ol>
-			</div>
-			<div id='tweet' class='column clearfix'>
-					<blockquote class="twitter-tweet tw-align-center"><p>I just finished a 5,3 km run <a href="https://twitter.com/search/%2523nikeplus">#nikeplus</a> <a href="https://twitter.com/search/%2523makeitcount">#makeitcount</a></p>&mdash; Mike van Rossum (@mikevanrossum) <a href="https://twitter.com/mikevanrossum/status/200285124020023296" data-datetime="2012-05-09T18:04:29+00:00">May 9, 2012</a></blockquote>
-					<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-		</div>
+		
 		<div class='more clearfix'>
 			<canvas class='sketch' id='record' width='500' height='300'></canvas>
 			<table class='hourTable column'>
@@ -157,7 +156,8 @@
 				Powered by <a href='http://twitter.com/'>Twitter</a>, <a href='http://nodejs.org/'>node</a> and <a href='http://socket.io/'>socket.io</a>.
 			</p>
 			<p class='ita'>
-				This website is not part of Nike, this is a fan made :)
+				This website is not part of Nike :) read more about it on
+				<a href='http://mikevanrossum.nl/blog/2012/05/visualizing-our-running-progress/'>my blog</a>.
 			</p>
 		</footer>
 		

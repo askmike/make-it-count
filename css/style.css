@@ -256,7 +256,7 @@ body {
 }
 
 .twitter-share-button {
-	margin:5px 0 0 180px;
+	margin:39px 0 0 -60px;
 }
 
 #main {
@@ -304,7 +304,7 @@ body {
 
 .more #tweet {
 	width:400px;
-	margin-top:45px;
+	margin-top:35px;
 }
 
 .more table.column {
