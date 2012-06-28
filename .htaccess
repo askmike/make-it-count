@@ -1,3 +1,7 @@
+RewriteEngine On
+RewriteCond $1 !^publish/
+RewriteRule ^(.*)$ publish/$1 [L]
+
 # Apache configuration file
 # httpd.apache.org/docs/2.2/mod/quickreference.html
 
