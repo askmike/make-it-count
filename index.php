@@ -3,7 +3,12 @@
 	require 'db.php';
 	
 	$t = getTopHour($link);
-	extract($t);
+	if(isset($t)) {
+		extract($t);		
+	} else {
+		echo 'node server crashed :(';
+	}
+
 	
 	dbClose($link);
 
